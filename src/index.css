@@ -11,7 +11,7 @@ body {
 
 ol, ul {
     padding-left: 50px;
-    color: white;
+    animation: color-change 1s infinite;
 
 }
 
@@ -20,13 +20,13 @@ ol, ul {
     content: "";
     display: table;
     text-align: center;
-    color: white;
+    animation: color-change 1s infinite;
 
 }
 
 .status {
     margin-bottom: 20px;
-    color: white;
+    animation: color-change 1s infinite;
 
 }
 
@@ -43,6 +43,11 @@ ol, ul {
     width: 75px;
     color: white;
 
+}
+@keyframes color-change {
+    0% { color: white; }
+    50% { color: blue; }
+    100% { color: white; }
 }
 .button {
     background-color: #1E90FF;
@@ -64,7 +69,7 @@ ol, ul {
 .game {
     display: flex;
     flex-direction: row;
-    color: white;
+    animation: color-change 1s infinite;
     font-weight: bold;
     font-size: 25px;
 
